@@ -11,3 +11,18 @@ apifonica-client is available on PyPi:
 ```
 $ python -m pip install ApifonicaClient
 ```
+
+
+## Usage
+
+```
+from apifonica_client import ApifonicaClient
+
+apifonica = ApifonicaClient(
+    apifonica_account_sid="your_account_sid_here",
+    apifonica_auth_token="your_auth_token_here",
+    apifonica_number_from="your_phone_number_here"
+)
+
+apifonica.send_sms("1234567890", "Hello, world!")
+```
